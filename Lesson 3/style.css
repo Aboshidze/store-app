@@ -1,0 +1,24 @@
+.colombia {
+  width: 400px;
+  height: 260px;
+  border: 2px solid #000;
+}
+
+.colombia div {
+  width: 100%;
+}
+
+.yellow {
+  height: 40%;
+  background: #fcd116;
+}
+
+.blue {
+  height: 30%;
+  background: #003893;
+}
+
+.red {
+  height: 30%;
+  background: #ce1126;
+}

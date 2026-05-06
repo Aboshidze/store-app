@@ -1,0 +1,93 @@
+/* Общие стили */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6f8;
+  padding: 30px;
+  color: #333;
+}
+
+h1,
+h2 {
+  color: #2c3e50;
+}
+
+/* Кнопки */
+button {
+  padding: 10px 16px;
+  margin: 6px 4px;
+  border: none;
+  border-radius: 6px;
+  background: #3498db;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    transform 0.1s;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Инпуты */
+input {
+  padding: 10px;
+  margin: 8px 0;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Ошибки */
+.error {
+  color: #e74c3c;
+  font-size: 14px;
+}
+
+/* Список задач */
+ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+li {
+  background: white;
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+li:hover {
+  background: #ecf0f1;
+}
+
+/* Модальное окно */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  width: 320px;
+  margin: 120px auto;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}

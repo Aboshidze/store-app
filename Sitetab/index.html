@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BuildHouse — строительство домов</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">BuildHouse</h1>
+        <nav class="nav">
+          <a href="#">Главная</a>
+          <a href="#about">О нас</a>
+          <a href="#services">Услуги</a>
+          <a href="#contact">Контакты</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h2>Строительство домов под ключ</h2>
+        <p>Надёжно. Качественно. В срок.</p>
+
+        <!-- ЭТОТ id НУЖЕН ДЛЯ JS -->
+        <button id="orderBtn">Оставить заявку</button>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2>О компании</h2>
+        <p>
+          Мы занимаемся строительством частных домов, коттеджей и коммерческих
+          объектов более 10 лет.
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Наши услуги</h2>
+
+        <!-- class="card" — используется в JS -->
+        <div class="cards">
+          <div class="card">Строительство домов</div>
+          <div class="card">Ремонт под ключ</div>
+          <div class="card">Проектирование</div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="footer">
+      <div class="container">
+        <p>📞 +7 777 777 77 77</p>
+        <p>© 2025 BuildHouse</p>
+      </div>
+    </footer>
+    <!-- МОДАЛЬНОЕ ОКНО -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Оставить заявку</h3>
+
+        <form id="orderForm">
+          <input type="text" id="name" placeholder="Ваше имя" />
+          <input type="tel" id="phone" placeholder="Телефон" />
+          <button type="submit">Отправить</button>
+        </form>
+
+        <p
+          id="successMessage"
+          style="display: none; color: green; margin-top: 10px"
+        >
+          Спасибо! Мы свяжемся с вами.
+        </p>
+      </div>
+    </div>
+
+    <!-- 🔥 ПОДКЛЮЧЕНИЕ JAVASCRIPT -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

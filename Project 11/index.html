@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task Planner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Task Planner</h1>
+
+    <!-- Кнопка открытия модального окна -->
+    <button id="openModal">Открыть модальное окно</button>
+
+    <!-- Модальное окно -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <p>Это модальное окно</p>
+        <button id="closeModal">Закрыть</button>
+      </div>
+    </div>
+
+    <!-- Форма с валидацией -->
+    <h2>Регистрация</h2>
+    <form id="registerForm">
+      <input type="email" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Пароль" />
+      <button type="submit">Отправить</button>
+      <p class="error" id="errorMsg"></p>
+    </form>
+
+    <!-- Динамический список задач -->
+    <h2>Мои задачи</h2>
+    <input type="text" id="taskInput" placeholder="Введите задачу" />
+    <button id="addTask">Добавить задачу</button>
+
+    <ul id="taskList"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>

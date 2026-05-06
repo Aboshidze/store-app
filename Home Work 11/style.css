@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.controls button,
+.colors button {
+  margin: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.figure-container {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  border: 1px dashed #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.figure {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+}
+
+.circle {
+  border-radius: 50%;
+}

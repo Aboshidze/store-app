@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fff;
+}
+
+.mondrian {
+  width: 748px;
+  display: grid;
+
+  /* реальные размеры из макета */
+  grid-template-columns: 320px 198px 153px 50px;
+  grid-template-rows: 414px 155px 20px;
+
+  gap: 9px;
+  background: #000;
+}
+
+/* цвета */
+.red {
+  background: #e72f24;
+}
+.white {
+  background: #f0f1ec;
+}
+.blue {
+  background: #004592;
+}
+.yellow {
+  background: #f9d01e;
+}
+.black {
+  background: #232629;
+}
+
+/* позиции */
+.red {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.white.top {
+  grid-column: 2 / 5;
+  grid-row: 1 / 2;
+}
+
+.white.left {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
+
+.white.center {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+
+.blue {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+}
+
+.yellow {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.black {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+
+.white.small {
+  grid-column: 4 / 5;
+  grid-row: 3 / 4;
+}
