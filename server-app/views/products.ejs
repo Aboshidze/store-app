@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Товары</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<%- include("partials/header") %>
+
+<h1>Товары</h1>
+
+<ul>
+  <% products.forEach(product => { %>
+    <li>
+      <a href="/product/<%= product.id %>">
+        <%= product.title %>
+      </a>
+      <p>Цена: $<%= product.price %></p>
+    </li>
+  <% }) %>
+</ul>
+
+</body>
+</html>

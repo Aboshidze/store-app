@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= product.title %></title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <%- include("partials/header") %>
+
+    <div class="product">
+      <h1><%= product.title %></h1>
+
+      <p><strong>Цена:</strong> $<%= product.price %></p>
+      <p><strong>Рейтинг:</strong> <%= product.rating %></p>
+      <p><strong>Категория:</strong> <%= product.category %></p>
+
+      <p><%= product.description %></p>
+
+      <!-- Картинка -->
+      <img
+        src="<%= product.thumbnail %>"
+        alt="<%= product.title %>"
+        width="300"
+      />
+    </div>
+  </body>
+</html>
